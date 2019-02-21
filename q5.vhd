@@ -88,12 +88,12 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 -- entity
 
-entity ckt_q3 is
+entity ckt_q5 is
 	port (Ai,Bi,Ci: in std_logic_vector(7 downto 0);
 			SL1, SL2, CLK: in std_logic;
 			RAX, RBX: out STD_LOGIC_VECTOR(7 downto 0));
-end ckt_q3;
-architecture q3_structure of ckt_q3 is 
+end ckt_q5;
+architecture q5_structure of ckt_q5 is 
 	component mux2t1
 		Port ( A,B: in STD_LOGIC_VECTOR(7 downto 0);
 				SEL: in STD_LOGIC;
@@ -131,4 +131,4 @@ begin
 				B => Ci,
 				SEL => SL2,
 				M_out => mux_result1);
-end q3_structure;
+end q5_structure;
